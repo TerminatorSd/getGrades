@@ -30,6 +30,7 @@ function getGrades() {
     info.csrfmiddlewaretoken = csrf;
     // console.log(info);
 
+    document.getElementsByClassName("input-info")[0].style.display = "none";
     document.getElementsByClassName("wait")[0].style.display = "block";
     getGradesInfo(info);
 }
