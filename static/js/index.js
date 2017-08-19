@@ -31,8 +31,8 @@ function getGrades() {
                     // console.log(data[item]);
                 }
                 if((parseInt(item) - 17) % 11 == 0) {
-                    console.log(data[item]);
-                    // str += data[item] + '</p><hr>'
+                    // console.log(data[item]);
+                    str += data[item] + '</p>'
                 }
             }
             str += '</div>';
