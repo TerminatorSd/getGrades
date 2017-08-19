@@ -1,0 +1,1193 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>华南理工大学研究生教育管理系统</title>
+        
+
+<script type="text/javascript">
+    var ssfwConfig = {
+        contextPath : '/ssfw',
+        comboboxUrl : '/ssfw/combobox.widgets',
+        combotreeUrl : '/ssfw/combotree.widgets',
+        combotableUrl : '/ssfw/combotable.widgets',
+        photoDownloadUrl : '/ssfw/photo.widgets',
+        photoUploadUrl : '/ssfw/photo.widgets',
+        selectrangeUrl : '/ssfw/selectrange.widgets',
+        combobox : ['bksqshzt','bzlb','pyjgzt','ydxl','hjssqdm','ttkzt','yw','kclbdm','xwcc','jc','gzxz','zlzt','zyfx','qzxlm','xz','dsssejxk','ksfs','zczt','rychjbdm','hjdj','lqlb','dblrqk','dslb','bysc_sftg','xuewei','lwkt_sftg','lwxtly','sbzjlx','zjlx_xwsy','skfs','xjyd_shzt','xbdm','kwdj','yz','bgsqxm','lwydb_shzt','sqnd','jxxz','zblx','dszcjgzt','cjzt','dslx','xmlb','yxblx','cjxgsq_shzt','jtgx','cbsjb','pyjhxxxq','zydm','lwcj_shzt','sffp','hkfs','skyy','xmly','xwhbh','lwzxpy_fylx','xwpc','ydyy','zyxwly','jcrfq','jspylb','kcjcyzlx','lwfb_shzt','rxfs','kcshzt','dsjglx','rkzk','ksxz','dszjlb','dssllb','zxjh','dsjg','xwkwdj','gjdq','xzqx','ssdw','sfsmbx','xxfs','dsxzzw','jxj_shzt','xldm','yjxkm','nd','wgyz','kcccdm','sfsbd','gjdq_xwsy','xslw_sfsy','yjsxy','cjdj','kcxz','xbxwwhbh','lwyz','shzt','pyfs','sqzjyy','pyzhapqk','dbcj','xqmc','jzglbm','zzlb','sfzk','sfjytg','dsxmlb','ksz','dslx_shzt','jdlx','qym','sbksfs','pyfalx','sslrqk','sftbxj','lwzxpy_pyjg','xslw_shzt','pm','sfjs','yxdm','sfhzl','sjsqshzt','gat','yjszy','sysllx','bgzt','gpxmshzt','xxxs','dwmc','lwydb_sftg','dszgxw','pyhj_shzt','zzmm','zcjb','kkjj','mzdm','sfxnwzj','zcjbm','kkxqdm','qzxwxkm_xwsy','zhicheng','gdlxm','fbhlr','xscj_zyxwlb','dsjf_shzt','fbqk','zzlbm','kcfl2','lwcfl_yxjcjg','ttkbdlx','kcfl','jsqk','lwmj','xscj_xwlx','dsfblb','ejxkm','jdfs','dsdp','lwcjlx','sqzjlx','ssdwyx','szdwdm','qk','sbnd','QZXWXKM','lwzqjc_shzt','kycg_shzt','hyzk','xscj_xwlwlb','zzpm','xslb2','dslx_sqdslx','xjzt','sfxwcy','pyjg','sjnr','xwzt','xscj_lwdj','ksxz_all','LWSSPJDJ','fwhbh','njdm','dszcjb','zblxdm','lwlx','lwfb_qrzt','sfmz','zszy','btbz','xqxx','grzz_shzt','sqxwxslbm','dswyyz','jsz','zlxx_shzt','bslwss_shzt','kkyxdm','zsksfs','pkzc','sf','bkxm','dwxz','sf1','gbzwmc','pkjc','fysq_shzt','jxdgzt','xlmc','zjgs','kwjb','dkjxxy','syxwqk','zrhcy','fmrpm','xwyjxk','xlm','lwpyzt','lwfblx','pyccm','rych','dsssyjxk','xscj_xwlb','xsly','dszc','hjssjddm','hkxzdm','cgjb','dbsqshzt','hssxwfs','jljb','xqdm','sfybhgkm','dbmszgh','jcrfqbbnf','kccjdj','lxbz','sfqk','yqqjjfly','fwhpyjg','tjzt','xshyzz_shzt','pcqd','xwmc','yjxkdm','lwzxpy_sslx','lwzxpy_shzt','zjlx','bjdm','xwhpsjg','ytdwlx','erxkm','gdgzt','cclx','cplb','lwkt_shzt','dsxkzy','yddl','zllx','brsmcx','rychdjdm','zyjszw','xmjb','xbxwwhpsjg','cbzt','kycgdl','pyslx','xw','dbcylb','rxjj','sfbd','bzhb_mj','jxpgzt','wgybmpc','xslb','xkmlm','wcqk'],
+        combotree : ['rxqsszyxx','rxqzyxx','zhxwxlxx','rsszdw','xzqh','dsjbxx','ssxxxx'],
+        combotable : [{"config":{"columns":[{"header":"职工号","width":"60","name":"zgh"},{"header":"姓名","width":"120","name":"xm"}],"title":"答辩秘书"},"name":"dbmsTable"},{"config":{"columns":[{"header":"职工号","width":"60","name":"zgh"},{"header":"姓名","width":"120","name":"xm"}],"title":"教职工"},"name":"jzgTable"},{"config":{"columns":[{"header":"院系代码","width":"60","name":"yxdm"},{"header":"院系名称","width":"120","name":"yxmc"}],"title":"校标单位"},"name":"yxdmTable"}]
+    };
+</script>
+
+
+<link href="/ssfw/resources/css/index.css" type="text/css" rel="stylesheet" />
+<link href="/ssfw/resources/js/ssfw/widgets/base/css/base.css" rel="stylesheet"type="text/css" />
+
+<link href="/ssfw/resources/js/ssfw/widgets/base/css/jquery-ui-1.9.1.custom.css" rel="stylesheet" type="text/css"/>
+
+<script type="text/javascript" src="/ssfw/resources/js/jquery/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="/ssfw/resources/js/jquery-ui.js"></script>
+<script type="text/javascript" src="/ssfw/resources/js/js-config-1.0.js"></script>
+<script type="text/javascript" src="/ssfw/resources/js/ssfw/widgets/base/jquery.ui.accordion.js"></script>
+
+<!-- js框架 -->
+<script src="/ssfw/resources/js/jquery-plugins/validate/jquery.metadata.js" type="text/javascript"></script>
+<script src="/ssfw/resources/js/jquery-plugins/validate/jquery.validate.js" type="text/javascript"></script>
+<script src="/ssfw/resources/js/jquery-plugins/validate/messages_cn.js" type="text/javascript"></script>
+<script src="/ssfw/resources/js/jquery-plugins/validate/validate_ex.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="/ssfw/resources/js/ssfw/widgets/base/jquery.ui.tooltip.js"></script>
+<script type="text/javascript" src="/ssfw/resources/js/jquery-plugins/jstree/jquery.jstree.js"></script>
+<script type="text/javascript" src="/ssfw/resources/js/jquery-plugins/jquery.form.js"></script>
+
+<script type="text/javascript" src="/ssfw/resources/js/jquery-plugins/kindeditor/kindeditor-min.js"></script>
+<script type="text/javascript" src="/ssfw/resources/js/ssfw/widgets/base/jquery.ui.util.js"></script>
+<script type="text/javascript" src="/ssfw/resources/js/ssfw/widgets/base/jquery.ui.text.js"></script>
+<script type="text/javascript" src="/ssfw/resources/js/ssfw/widgets/base/jquery.ui.textButton.js"></script>
+<script type="text/javascript" src="/ssfw/resources/js/ssfw/widgets/base/jquery.ui.selectRange.js"></script>
+<script type="text/javascript" src="/ssfw/resources/js/ssfw/widgets/base/jquery.ui.combobox.js"></script>
+<script type="text/javascript" src="/ssfw/resources/js/ssfw/widgets/base/jquery.ui.combotree.js"></script>
+<script type="text/javascript" src="/ssfw/resources/js/ssfw/widgets/base/jquery.ui.date.js"></script>
+<script type="text/javascript" src="/ssfw/resources/js/ssfw/widgets/base/jquery.ui.textarea.js"></script>
+<script type="text/javascript" src="/ssfw/resources/js/ssfw/widgets/base/jquery.ui.photo.js"></script>
+<script type="text/javascript" src="/ssfw/resources/js/ssfw/widgets/base/jquery.ui.selectTable.js"></script>
+<script type="text/javascript" src="/ssfw/resources/js/ssfw/widgets/base/jquery.ui.attachment.js"></script>
+<script type="text/javascript" src="/ssfw/resources/js/ssfw/widgets/base/jquery.ui.monthPicker.js"></script>
+<script type="text/javascript" src="/ssfw/resources/js/ssfw/widgets/base/jquery.ui.editableForm.js"></script>
+<script type="text/javascript" src="/ssfw/resources/js/ssfw/widgets/widgets_progressIndicator.js"></script>
+
+<script type="text/javascript" src="/ssfw/resources/js/ssfwUtil.js"></script>
+<script type="text/javascript" src="/ssfw/resources/js/json2.js"></script>
+
+
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <style type="text/css">
+            #table_cjxx td {
+                text-align: center;
+            }
+
+            #table_cjxx th {
+                text-align: center;
+            }
+        </style>
+          <script type="text/javascript">
+            $(document).ready(function() {
+                uniteTable('table_cjxx', 1);
+             });
+                
+          </script>   
+    
+        
+        
+            
+        
+
+        <script type="text/javascript">
+            $(function() {	
+                $(".myList").ssfwAccordion ({
+                    active : 0
+                });
+		
+                $(".listCon > li >a").click(function(){
+                    $('#menuitemwid').val($(this).attr('menuitemwid'));
+                    $('#menuForm').submit();
+                });
+		
+                $('#messages').html($('#hiddenMessages').html());
+                
+                var switchRoleSelect = $('#roleSelect');
+                if(switchRoleSelect.length){
+             	   switchRoleSelect.change(function (){
+             		    var selectedRole = $(this).find('option:selected');
+             		    var form = $('<form>',{
+             		    	method : 'post',
+             		    	action : '/ssfw' + '/index.do'
+             		    }).append($('<input>',{
+             		        type : 'hidden',
+             		        name : 'role'
+             		    }).val(selectedRole.val())).appendTo('body');
+             		    
+             		    form.submit()
+             	   });
+                }
+ 		
+                
+            });
+
+        </script>
+        <!--[if IE 6]>
+        <script type="text/javascript" language="javascript" src="/ssfw/resources/js/ie6png.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <form id="menuForm" method="post" action="/ssfw/navmenu.do">
+            <input type="hidden" id="menuitemwid" name="menuItemWid" />
+        </form>
+        <div class="header w1000">
+            <div class="logo">
+                <a href="#" title="华南理工大学研究生信息管理系统"></a>
+            </div>
+            <div class="welMessage">
+                <p>
+                      
+                          <select id="roleSelect">
+		                      
+		                         <option  
+		                            selected = "true"
+		                          >硕士生</option>
+		                      
+	                      </select>
+                       
+                    
+                    <a href="/ssfw/j_spring_security_logout" class="exit"><i></i>退出系统</a>
+                </p>
+                <p>
+                    <span>徐绍栋(201621031897)，您好！</span>
+                </p>
+            </div>
+        </div>
+        <div class="container w1000">
+            <div class="mainLeft">
+                <h1 class="areaTitle">我的菜单</h1>
+                <div class="myList">
+                    
+                        <h3 class="myListTitle">
+                            <i class="arrow"></i><i class="smallIcon"></i>学籍服务
+                        </h3>
+                        <div class="myListCon">
+                            <ul class="listCon">
+                                
+                                    <li><a href="javascript:" path="/xjgl/xjxx/yjsjbxx.do"
+                                           menuitemwid="1E437B821676C0B1E05026CA18D5725A"><i></i>学生基本信息</a></li>
+                                    
+                                    <li><a href="javascript:" path=""
+                                           menuitemwid="3637F797F7ED3CCEE05026CA18D55630"><i></i>档案信息查询</a></li>
+                                    
+                                    <li><a href="javascript:" path=""
+                                           menuitemwid="51709327D206D4B9E05026CA18D5342A"><i></i>离校查询</a></li>
+                                    
+                                    <li><a href="javascript:" path="/xjgl/xjxx/rxqxx.do"
+                                           menuitemwid="1E437B821677C0B1E05026CA18D5725A"><i></i>学生入学信息</a></li>
+                                    
+                                    <li><a href="javascript:" path=""
+                                           menuitemwid="1ED51299761CA81AE05026CA18D56D9A"><i></i>基本信息变更查询</a></li>
+                                    
+                                    <li><a href="javascript:" path="/xjgl/xjyd.do"
+                                           menuitemwid="1E437B821674C0B1E05026CA18D5725A"><i></i>学籍变动</a></li>
+                                    
+                            </ul>
+                        </div>
+                    
+                        <h3 class="myListTitle">
+                            <i class="arrow"></i><i class="smallIcon"></i>培养服务
+                        </h3>
+                        <div class="myListCon">
+                            <ul class="listCon">
+                                
+                                    <li><a href="javascript:" path=""
+                                           menuitemwid="1FEA9294533EF893E05026CA18D55CA7"><i></i>培养计划学生维护</a></li>
+                                    
+                                    <li><a href="javascript:" path=""
+                                           menuitemwid="5360615B9730AC3AE05026CA18D5332F"><i></i>专业实践学生申请</a></li>
+                                    
+                                    <li><a href="javascript:" path=""
+                                           menuitemwid="45F54120AB4D5178E05026CA18D52AEE"><i></i>培养方案信息查询</a></li>
+                                    
+                                    <li><a href="javascript:" path=""
+                                           menuitemwid="35C74DCC3CECEA4FE05026CA18D5591A"><i></i>课程信息查询</a></li>
+                                    
+                                    <li><a href="javascript:" path=""
+                                           menuitemwid="20C6DE86FC16277AE05026CA18D516D2"><i></i>我的培养环节</a></li>
+                                    
+                                    <li><a href="javascript:" path=""
+                                           menuitemwid="1FE9703BC412E5B5E05026CA18D55C03"><i></i>学生课程成绩查看</a></li>
+                                    
+                                    <li><a href="javascript:" path=""
+                                           menuitemwid="22F4D30C7E8ECBC9E05026CA18D501AB"><i></i>重修申请</a></li>
+                                    
+                                    <li><a href="javascript:" path=""
+                                           menuitemwid="243FC0F39FF373EAE05026CA18D521A5"><i></i>缓考申请</a></li>
+                                    
+                                    <li><a href="javascript:" path=""
+                                           menuitemwid="2788ECE2B929AE36E05026CA18D5770F"><i></i>网上评教</a></li>
+                                    
+                            </ul>
+                        </div>
+                    
+                        <h3 class="myListTitle">
+                            <i class="arrow"></i><i class="smallIcon"></i>学位服务
+                        </h3>
+                        <div class="myListCon">
+                            <ul class="listCon">
+                                
+                                    <li><a href="javascript:" path="/xwgl/xwsqydj/xsxwydjsq/index.do"
+                                           menuitemwid="1E437B82168EC0B1E05026CA18D5725A"><i></i>学位申请预登记</a></li>
+                                    
+                                    <li><a href="javascript:" path=""
+                                           menuitemwid="48653C349EA7F6AAE05026CA18D5513D"><i></i>答辩公告</a></li>
+                                    
+                                    <li><a href="javascript:" path=""
+                                           menuitemwid="1E437B82168FC0B1E05026CA18D5725A"><i></i>送审结果信息查询</a></li>
+                                    
+                                    <li><a href="javascript:" path=""
+                                           menuitemwid="1E437B821690C0B1E05026CA18D5725A"><i></i>我的学位自助</a></li>
+                                    
+                                    <li><a href="javascript:" path=""
+                                           menuitemwid="1E437B821691C0B1E05026CA18D5725A"><i></i>我的答辩结果</a></li>
+                                    
+                            </ul>
+                        </div>
+                    
+                        <h3 class="myListTitle">
+                            <i class="arrow"></i><i class="smallIcon"></i>学术成果
+                        </h3>
+                        <div class="myListCon">
+                            <ul class="listCon">
+                                
+                                    <li><a href="javascript:" path=""
+                                           menuitemwid="20EFC935CCD03245E05026CA18D539C4"><i></i>论文发表情况登记</a></li>
+                                    
+                                    <li><a href="javascript:" path=""
+                                           menuitemwid="360146A578666E68E05026CA18D5667C"><i></i>优秀学位论文申请</a></li>
+                                    
+                                    <li><a href="javascript:" path=""
+                                           menuitemwid="28A6C902AA97DB1FE05026CA18D566CB"><i></i>学生专利获得情况登记</a></li>
+                                    
+                            </ul>
+                        </div>
+                    
+                        <h3 class="myListTitle">
+                            <i class="arrow"></i><i class="smallIcon"></i>研工服务
+                        </h3>
+                        <div class="myListCon">
+                            <ul class="listCon">
+                                
+                                    <li><a href="javascript:" path="/jxjgl/jxj/ksqjxj.do"
+                                           menuitemwid="1E437B82161BC0B1E05026CA18D5725A"><i></i>奖学金申请</a></li>
+                                    
+                                    <li><a href="javascript:" path=""
+                                           menuitemwid="327BCB0850ABFB5CE05026CA18D50A8B"><i></i>学术论文奖申请</a></li>
+                                    
+                                    <li><a href="javascript:" path=""
+                                           menuitemwid="1F74371055C075B5E05026CA18D574F4"><i></i>学生医保申请</a></li>
+                                    
+                                    <li><a href="javascript:" path=""
+                                           menuitemwid="1F8384302558AEDDE05026CA18D574E8"><i></i>助学贷款申请</a></li>
+                                    
+                            </ul>
+                        </div>
+                    
+                        <h3 class="myListTitle">
+                            <i class="arrow"></i><i class="smallIcon"></i>综合服务
+                        </h3>
+                        <div class="myListCon">
+                            <ul class="listCon">
+                                
+                                    <li><a href="javascript:" path=""
+                                           menuitemwid="24A0C600CD93E9DEE05026CA18D56F27"><i></i>乘车优惠卡补办申请</a></li>
+                                    
+                                    <li><a href="javascript:" path=""
+                                           menuitemwid="24A0FC44C577976CE05026CA18D56F59"><i></i>研究生证补办申请</a></li>
+                                    
+                            </ul>
+                        </div>
+                    
+                        <h3 class="myListTitle">
+                            <i class="arrow"></i><i class="smallIcon"></i>单科进修生选课
+                        </h3>
+                        <div class="myListCon">
+                            <ul class="listCon">
+                                
+                                    <li><a href="javascript:" path=""
+                                           menuitemwid="287E5F88C955C8CCE05026CA18D53F89"><i></i>专业学位单科进修</a></li>
+                                    
+                                    <li><a href="javascript:" path=""
+                                           menuitemwid="287E5F88C954C8CCE05026CA18D53F89"><i></i>学术型单科进修</a></li>
+                                    
+                            </ul>
+                        </div>
+                    
+                        <h3 class="myListTitle">
+                            <i class="arrow"></i><i class="smallIcon"></i>国(境)外交流服务
+                        </h3>
+                        <div class="myListCon">
+                            <ul class="listCon">
+                                
+                                    <li><a href="javascript:" path=""
+                                           menuitemwid="25B97D8FA688A945E05026CA18D56654"><i></i>国(境)外交流申请查询</a></li>
+                                    
+                                    <li><a href="javascript:" path=""
+                                           menuitemwid="25B97D8FA689A945E05026CA18D56654"><i></i>国(境)交流申请</a></li>
+                                    
+                                    <li><a href="javascript:" path=""
+                                           menuitemwid="25B97D8FA68AA945E05026CA18D56654"><i></i>我的国(境)外交流项目</a></li>
+                                    
+                            </ul>
+                        </div>
+                    
+                </div>
+            </div>
+            <div class="mainRight">
+                <div class="nowPosition">
+                    <span class="nPLTrangle"></span><span class="nPMCon"><a href="/ssfw/index.do">回首页</a>&nbsp;&nbsp;当前位置：</span><span class="nPRTrangle"></span>
+                </div>
+                <div class="mRTable">
+                    <div id="hiddenMessages" style="display: none"></div>
+                    
+    <div align="center">
+            <h2>我的成绩信息</h2>
+    </div>
+    <div>
+    	<table style="width: 100%">
+            <tr>
+                <td>
+                   <div class="formBtn" style="float: left;">
+                  		<span style="display: none"><a href="javascript:" onclick="alert('建设中……')" class="submitLongLong">成绩单打印</a></span>
+                   </div>
+                </td>
+                <td style="color: red">红色的课程成绩在报表中不会打印! </td>
+                   
+            </tr>
+        </table>
+      	<table style="width: 100%" id="table_cjxx" class="table_con" align="center" cellpadding="0" cellspacing="0">
+	        <tr class="tableTr">
+	            <th style="width:10%">课程类别</th>
+	            <th style="width:8%">选修学期</th>
+	            <th style="width:10%">课程编号</th>
+	            <th >课程</th>
+	            <th style="width:5%">学分</th>
+	         <!--    <th style="width:10%">教学班号</th> -->
+	            <th style="width:7%">考试成绩</th>
+	            
+					<th style="width:7%">绩点</th>
+				
+	            <th style="width:7%">是否及格</th>
+	            <th style="width:7%">考试性质</th>
+	            <th style="width:7%">考试日期</th>
+	            <th style="width:10%">备注</th>
+	           
+	        </tr>
+            
+				<tr class="t_con" 
+					
+                            
+                             
+
+               		
+                	
+                            
+                             style="background-color: rgb(246, 251, 255); " 
+
+               		>
+                    <td>必修环节</td>
+                    <td>   
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                             第三学期
+	                         
+	                    
+                    </td>
+                    <td>Q0004002</td>
+                    <td style="text-align:left;padding-left: 6px">专业实践（全日制工程硕士）</td>
+                    <td>6</td>
+                <!--      <td></td> -->
+                    <td>未录入</td>
+                     
+                    	<td>&nbsp</td>
+                    
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>                    
+            	</tr>
+        	
+				<tr class="t_con" 
+					
+                            
+                             
+
+               		
+                	
+                             style="background-color: rgb(255, 255, 255);"  
+                            
+
+               		>
+                    <td>公共基础课</td>
+                    <td>   
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                             第一学期
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+                    </td>
+                    <td>S0001024</td>
+                    <td style="text-align:left;padding-left: 6px">中国特色社会主义理论与实践研究</td>
+                    <td>2</td>
+                <!--      <td>南01班</td> -->
+                    <td>86</td>
+                     
+                    	<td>&nbsp</td>
+                    
+                    <td>及格</td>
+                    <td>期末考试</td>
+                    <td>2017-01-10</td>
+                    <td>&nbsp;</td>                    
+            	</tr>
+        	
+				<tr class="t_con" 
+					
+                            
+                             
+
+               		
+                	
+                            
+                             style="background-color: rgb(246, 251, 255); " 
+
+               		>
+                    <td>公共基础课</td>
+                    <td>   
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                             第一学期
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+                    </td>
+                    <td>S0002035</td>
+                    <td style="text-align:left;padding-left: 6px">综合英语</td>
+                    <td>3</td>
+                <!--      <td>免修免考班</td> -->
+                    <td>85</td>
+                     
+                    	<td>&nbsp</td>
+                    
+                    <td>及格</td>
+                    <td>期末考试</td>
+                    <td>2017-01-03</td>
+                    <td>&nbsp;</td>                    
+            	</tr>
+        	
+				<tr class="t_con" 
+					
+                            
+                             
+
+               		
+                	
+                             style="background-color: rgb(255, 255, 255);"  
+                            
+
+               		>
+                    <td>公共基础课</td>
+                    <td>   
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                             第二学期
+	                         
+	                    
+	                         
+	                    
+                    </td>
+                    <td>S0001025</td>
+                    <td style="text-align:left;padding-left: 6px">自然辩证法概论</td>
+                    <td>1</td>
+                <!--      <td></td> -->
+                    <td>未录入</td>
+                     
+                    	<td>&nbsp</td>
+                    
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>                    
+            	</tr>
+        	
+				<tr class="t_con" 
+					
+                            
+                             
+
+               		
+                	
+                            
+                             style="background-color: rgb(246, 251, 255); " 
+
+               		>
+                    <td>领域核心课—实践课程</td>
+                    <td>   
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                             第一学期
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+                    </td>
+                    <td>S0812072</td>
+                    <td style="text-align:left;padding-left: 6px">操作系统与系统编程</td>
+                    <td>2</td>
+                <!--      <td>操作系统与系统编程</td> -->
+                    <td>85</td>
+                     
+                    	<td>&nbsp</td>
+                    
+                    <td>及格</td>
+                    <td>期末考试</td>
+                    <td>2016-12-27</td>
+                    <td>&nbsp;</td>                    
+            	</tr>
+        	
+				<tr class="t_con" 
+					
+                            
+                             
+
+               		
+                	
+                             style="background-color: rgb(255, 255, 255);"  
+                            
+
+               		>
+                    <td>领域核心课—实践课程</td>
+                    <td>   
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                             第一学期
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+                    </td>
+                    <td>S4301005</td>
+                    <td style="text-align:left;padding-left: 6px">数据库管理及应用</td>
+                    <td>2</td>
+                <!--      <td>数据库管理及应用</td> -->
+                    <td>88</td>
+                     
+                    	<td>&nbsp</td>
+                    
+                    <td>及格</td>
+                    <td>期末考试</td>
+                    <td>2016-12-22</td>
+                    <td>&nbsp;</td>                    
+            	</tr>
+        	
+				<tr class="t_con" 
+					
+                            
+                             
+
+               		
+                	
+                            
+                             style="background-color: rgb(246, 251, 255); " 
+
+               		>
+                    <td>领域核心课—实践课程</td>
+                    <td>   
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                             第二学期
+	                         
+	                    
+	                         
+	                    
+                    </td>
+                    <td>S0812069</td>
+                    <td style="text-align:left;padding-left: 6px">企业级软件开发技术</td>
+                    <td>2</td>
+                <!--      <td></td> -->
+                    <td>未录入</td>
+                     
+                    	<td>&nbsp</td>
+                    
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>                    
+            	</tr>
+        	
+				<tr class="t_con" 
+					
+                            
+                             
+
+               		
+                	
+                             style="background-color: rgb(255, 255, 255);"  
+                            
+
+               		>
+                    <td>领域核心课—行(企)业专家上讲台课程</td>
+                    <td>   
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                             第二学期
+	                         
+	                    
+	                         
+	                    
+                    </td>
+                    <td>S0812026</td>
+                    <td style="text-align:left;padding-left: 6px">信息安全技术</td>
+                    <td>2</td>
+                <!--      <td></td> -->
+                    <td>未录入</td>
+                     
+                    	<td>&nbsp</td>
+                    
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>                    
+            	</tr>
+        	
+				<tr class="t_con" 
+					
+                            
+                             
+
+               		
+                	
+                            
+                             style="background-color: rgb(246, 251, 255); " 
+
+               		>
+                    <td>领域核心课—行(企)业专家上讲台课程</td>
+                    <td>   
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                             第二学期
+	                         
+	                    
+	                         
+	                    
+                    </td>
+                    <td>S0812057</td>
+                    <td style="text-align:left;padding-left: 6px">信息检索与Web挖掘</td>
+                    <td>2</td>
+                <!--      <td></td> -->
+                    <td>未录入</td>
+                     
+                    	<td>&nbsp</td>
+                    
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>                    
+            	</tr>
+        	
+				<tr class="t_con" 
+					
+                            
+                             
+
+               		
+                	
+                             style="background-color: rgb(255, 255, 255);"  
+                            
+
+               		>
+                    <td>领域核心课—其他</td>
+                    <td>   
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                             第二学期
+	                         
+	                    
+	                         
+	                    
+                    </td>
+                    <td>Q0812003</td>
+                    <td style="text-align:left;padding-left: 6px">软件架构理论与实践</td>
+                    <td>2</td>
+                <!--      <td></td> -->
+                    <td>未录入</td>
+                     
+                    	<td>&nbsp</td>
+                    
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>                    
+            	</tr>
+        	
+				<tr class="t_con" 
+					
+                            
+                             
+
+               		
+                	
+                            
+                             style="background-color: rgb(246, 251, 255); " 
+
+               		>
+                    <td>领域选修课—跨领域课程</td>
+                    <td>   
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                             第二学期
+	                         
+	                    
+	                         
+	                    
+                    </td>
+                    <td>S0003018</td>
+                    <td style="text-align:left;padding-left: 6px">最优化高级计算方法</td>
+                    <td>2</td>
+                <!--      <td></td> -->
+                    <td>未录入</td>
+                     
+                    	<td>&nbsp</td>
+                    
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>                    
+            	</tr>
+        	
+				<tr class="t_con" 
+					
+                            
+                             
+
+               		
+                	
+                             style="background-color: rgb(255, 255, 255);"  
+                            
+
+               		>
+                    <td>领域选修课—其他</td>
+                    <td>   
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                             第一学期
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+                    </td>
+                    <td>S0812084</td>
+                    <td style="text-align:left;padding-left: 6px">高级计算机网络</td>
+                    <td>2</td>
+                <!--      <td>高级计算机网络</td> -->
+                    <td>87</td>
+                     
+                    	<td>&nbsp</td>
+                    
+                    <td>及格</td>
+                    <td>期末考试</td>
+                    <td>2016-12-29</td>
+                    <td>&nbsp;</td>                    
+            	</tr>
+        	
+				<tr class="t_con" 
+					
+                            
+                             
+
+               		
+                	
+                            
+                             style="background-color: rgb(246, 251, 255); " 
+
+               		>
+                    <td>领域选修课—其他</td>
+                    <td>   
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                             第二学期
+	                         
+	                    
+	                         
+	                    
+                    </td>
+                    <td>Q0812004</td>
+                    <td style="text-align:left;padding-left: 6px">Visual Computing</td>
+                    <td>3</td>
+                <!--      <td></td> -->
+                    <td>未录入</td>
+                     
+                    	<td>&nbsp</td>
+                    
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>                    
+            	</tr>
+        	
+				<tr class="t_con" 
+					
+                            
+                             
+
+               		
+                	
+                             style="background-color: rgb(255, 255, 255);"  
+                            
+
+               		>
+                    <td>领域选修课—其他</td>
+                    <td>   
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                    
+	                         
+	                             第二学期
+	                         
+	                    
+	                         
+	                    
+                    </td>
+                    <td>Q0812005</td>
+                    <td style="text-align:left;padding-left: 6px">Pattern Classification</td>
+                    <td>2</td>
+                <!--      <td>模式分类</td> -->
+                    <td>80</td>
+                     
+                    	<td>&nbsp</td>
+                    
+                    <td>及格</td>
+                    <td>期末考试</td>
+                    <td>2017-06-02</td>
+                    <td>&nbsp;</td>                    
+            	</tr>
+        	
+		</table>            
+        <div align="center" style="font-size:12px;color:red">
+        	
+        		 <span><b>学分统计信息：(总学分：13.0,学位课学分：9.0),平均积点：0.0,已获课程平均绩点：0.0</b></span>
+        		
+        	  
+              
+        </div>
+        <!-- 
+         <div align="center">
+            <h2>英语水平考试成绩信息</h2>
+    	</div>
+    	
+        <table style="width: 100%" id="table_cjxx" class="table_con" align="center" cellpadding="0" cellspacing="0">
+	        <tr class="tableTr">
+	            <th style="width:20%">学号</th>
+	            <th style="width:20%">姓名</th>
+	            <th style="width:20%">考试成绩</th>
+	            <th style="width:20%">成绩类型</th>
+	            <th style="width:20%">考试时间</th>
+	        </tr>
+            
+		</table>     -->
+	</div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

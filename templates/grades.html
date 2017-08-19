@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>成绩信息</title>
+
+    <style>
+        body {
+            background-color: #f1f1f1;
+        }
+        .card {
+            background-color: white;
+            width: 80vw;
+            margin-top: 10vw;
+            margin-left: 10vw;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+     <div class="card"></div>
+<script>
+
+    function getQueryString(name) {
+        var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) {
+            return decodeURIComponent(r[2]);
+        }
+        return null;
+    }
+
+    window.onload = function () {
+        var data = decodeURI(getQueryString("data"));
+        console.log(data);
+    };
+{#    var  detail= eval('('+getQueryString("data")+')');#}
+{#    var  detail= getQueryString("json");#}
+{#    console.log(detail);#}
+{#    console.log(detail.id);#}
+{#    var data = document.URl.split('?')[1];#}
+{##}
+{#    console.log(data);#}
+
+{#    document.getElementsByClassName("card")[0].innerHTML = grades;#}
+</script>
+</body>
+
+
+</html>
