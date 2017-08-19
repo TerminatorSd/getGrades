@@ -48,4 +48,5 @@ hr {
 .wait {
     margin-top: 10vw;
     font-size: 18px;
+    display: none;
 }
