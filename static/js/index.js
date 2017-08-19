@@ -55,6 +55,16 @@ function getCookie(name)
 		return null;
 }
 
+//删除Cookie
+function delCookie(name)
+{
+    var exp = new Date();
+    exp.setTime(exp.getTime() - 1);
+    var cval=getCookie(name);
+    if(cval!=null)
+        document.cookie= name + "="+cval+";expires="+exp.toGMTString();
+}
+
 //获取成绩信息
 function getGradesInfo(info) {
 
@@ -71,12 +81,10 @@ function getGradesInfo(info) {
             var str = '<div class="card"><p>姓名：' + name　+'</p><hr>';
             console.log(name);
             for(var item in data) {
-                if((parseInt(item) - 15) % 11 == 0) {
+                if((parseInt(item) - 15) % 11 === 0) {
                     str += '<p>' + data[item] + '：';
-                    // console.log(data[item]);
                 }
-                if((parseInt(item) - 17) % 11 == 0) {
-                    // console.log(data[item]);
+                if((parseInt(item) - 17) % 11 === 0) {
                     str += data[item] + '</p>'
                 }
             }
