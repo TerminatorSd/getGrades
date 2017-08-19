@@ -33,7 +33,7 @@ def getGrades(request):
         session.post(loginURL, data=postData)
         text = session.get("http://yjsjy.1yd3.cas.scut.edu.cn/ssfw/pygl/cjgl/cjcx.do")
         content = text.content
-        print content
+        # print content
         content = etree.HTML(content)
         name = content.xpath("//p/span/text()")[0]
         result = content.xpath("//table/tr[@class='t_con']/td/text()")
