@@ -1,6 +1,23 @@
 /**
  * Created by xsd on 17-8-18.
  */
+window.onload = function () {
+
+    var no = getCookie("no");
+    var psw = getCookie("psw");
+    var csrf = document.getElementsByTagName("input")[0].value;
+    if(no && psw) {
+        var info = {};
+        document.getElementsByClassName("input-info")[0].style.display = "none";
+        document.getElementsByClassName("wait")[0].style.display = "block";
+
+        info.no = no;
+        info.psw = psw;
+        info.csrfmiddlewaretoken=csrf;
+
+        getGradesInfo(info);
+    }
+};
 
 function getGrades() {
 
@@ -11,87 +28,13 @@ function getGrades() {
     info.no = no;
     info.psw = psw;
     info.csrfmiddlewaretoken = csrf;
-    console.log(info);
-    // window.location.href = "grades.html";
+    // console.log(info);
 
-    $.ajax({
-        url: '/getGrades/',
-        dataType: 'JSON',
-        type: 'POST',
-        data: info,
-        success: function (data) {
-
-            //console.log(data);
-            var name = data[0].split('(')[0];
-            var str = '<div class="card"><p>姓名：' + name　+'</p><hr>';
-            console.log(name);
-            for(var item in data) {
-                if((parseInt(item) - 15) % 11 == 0) {
-                    str += '<p>' + data[item] + '：';
-                    // console.log(data[item]);
-                }
-                if((parseInt(item) - 17) % 11 == 0) {
-                    // console.log(data[item]);
-                    str += data[item] + '</p>'
-                }
-            }
-            str += '</div>';
-
-            // document.getElementsByClassName("input-info")[0].style.display = "none";
-            document.getElementsByClassName("info")[0].innerHTML = str;
-
-            // window.location.href = "grades.html?data=" + encodeURI(JSON.stringify(data));
-        },
-        fail: function () {
-            console.log("fail!");
-        }
-    });
-    // window.location.href = "grades.html";
+    document.getElementsByClassName("wait")[0].style.display = "block";
+    getGradesInfo(info);
 }
 
-    // function ajax(options) {
-    //     options = options || {};
-    //     options.type = (options.type || "GET").toUpperCase();
-    //     options.dataType = options.dataType || "json";
-    //     var params = formatParams(options.data);
-    //
-    //     //创建 - 非IE6 - 第一步
-    //     if (window.XMLHttpRequest) {
-    //         var xhr = new XMLHttpRequest();
-    //     } else { //IE6及其以下版本浏览器
-    //         var xhr = new ActiveXObject('Microsoft.XMLHTTP');
-    //     }
-    //
-    //     //接收 - 第三步
-    //     xhr.onreadystatechange = function () {
-    //         if (xhr.readyState == 4) {
-    //             var status = xhr.status;
-    //             if (status >= 200 && status < 300) {
-    //                 options.success && options.success(xhr.responseText, xhr.responseXML);
-    //             } else {
-    //                 options.fail && options.fail(status);
-    //             }
-    //         }
-    //     }
-    //
-    //     //连接 和 发送 - 第二步
-    //     if (options.type == "GET") {
-    //
-    //         var str = options.url;
-    //         if (str.indexOf("?") > 0) {
-    //             xhr.open("GET", options.url + "&" + params, true);
-    //         } else {
-    //             xhr.open("GET", options.url + "?" + params, true);
-    //         }
-    //
-    //         xhr.send(null);
-    //     } else if (options.type == "POST") {
-    //         xhr.open("POST", options.url, true);
-    //         //设置表单提交时的内容类型
-    //         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    //         xhr.send(params);
-    //     }
-    // }
+
 //设置cookie
 function setCookie(name,value,days)
 {
@@ -109,4 +52,40 @@ function getCookie(name)
 		return unescape(arr[2]);
 	else
 		return null;
+}
+
+//获取成绩信息
+function getGradesInfo(info) {
+
+    $.ajax({
+        url: '/getGrades/',
+        dataType: 'JSON',
+        type: 'POST',
+        data: info,
+        success: function (data) {
+            setCookie("no", info.no, 7);
+            setCookie("psw", info.psw, 7);
+            //console.log(data);
+            var name = data[0].split('(')[0];
+            var str = '<div class="card"><p>姓名：' + name　+'</p><hr>';
+            console.log(name);
+            for(var item in data) {
+                if((parseInt(item) - 15) % 11 == 0) {
+                    str += '<p>' + data[item] + '：';
+                    // console.log(data[item]);
+                }
+                if((parseInt(item) - 17) % 11 == 0) {
+                    // console.log(data[item]);
+                    str += data[item] + '</p>'
+                }
+            }
+            str += '</div>';
+
+            document.getElementsByClassName("wait")[0].style.display = "none";
+            document.getElementsByClassName("info")[0].innerHTML = str;
+        },
+        fail: function () {
+            console.log("fail!");
+        }
+    });
 }

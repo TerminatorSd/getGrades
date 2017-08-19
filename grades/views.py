@@ -13,16 +13,11 @@ def index(request):
     return render(request, 'index.html')
 
 def getGrades(request):
-    """ 获取Cookies """
     print "enter getGrades()"
-    # return render(request, 'index.html')
     if (request.method == "POST"):
-        ret = "123"
         postData = request.POST
         account = postData.get('no')
         password = postData.get('psw')
-        # print account
-        # print password
         loginURL = r'https://cas.scut.edu.cn/amserver/UI/Login'
         postData = {
             "IDToken0": "",
@@ -53,11 +48,6 @@ def getGrades(request):
             res = res.strip()
             if(res):
                 ret[st] = res
-        #     # print res
-        # print ret
-        # ret = []
-        # for res in result:
-        #     ret.append(res.strip())
 
         # return render(request, 'grades.html', {'grades': ret})
         return HttpResponse(json.dumps(ret))
