@@ -2,49 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>成绩信息</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=0" name="viewport" />
+    <title>成绩查询</title>
+    {% load staticfiles %}
+    <script src="{% static "js/vendor/jquery-1.12.0.min.js" %}"></script>
+    <script src="{% static "js/index.js" %}"></script>
+    <link rel="stylesheet" href="{%  static 'css/index.css' %}" />
 
     <style>
-        body {
-            background-color: #f1f1f1;
-        }
-        .card {
-            background-color: white;
-            width: 80vw;
-            margin-top: 10vw;
-            margin-left: 10vw;
-            border-radius: 20px;
-        }
+
+
     </style>
 </head>
 <body>
-     <div class="card"></div>
-<script>
-
-    function getQueryString(name) {
-        var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
-        var r = window.location.search.substr(1).match(reg);
-        if (r != null) {
-            return decodeURIComponent(r[2]);
-        }
-        return null;
-    }
-
-    window.onload = function () {
-        var data = decodeURI(getQueryString("data"));
-        console.log(data);
-    };
-{#    var  detail= eval('('+getQueryString("data")+')');#}
-{#    var  detail= getQueryString("json");#}
-{#    console.log(detail);#}
-{#    console.log(detail.id);#}
-{#    var data = document.URl.split('?')[1];#}
-{##}
-{#    console.log(data);#}
-
-{#    document.getElementsByClassName("card")[0].innerHTML = grades;#}
-</script>
+<div class="input-info">
+    {% csrf_token %}
+    <input type="text" name="no" placeholder="账号" value=""/>
+    <input type="password" name="psw" placeholder="密码" value=""/>
+    <input type="button" value="查询" onclick="getGrades()">
+</div>
+<div align="center" class="wait">大哥，给我3秒钟时间……</div>
+<div class="info"></div>
 </body>
-
-
 </html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=0" name="viewport" />
+    <title>用户注册</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <script src="{% static 'js/register.js' %}"></script>
+
+</head>
+<body>
+     <form action="/newUser/" method="post">
+         {% csrf_token %}
+         <input type="text" name="account" placeholder="账号" required/>
+         <input type="password" name="password" placeholder="密码" required/>
+         <input type="text" name="nicheng" placeholder="昵称"/>
+         <input type="email" name="email" placeholder="邮箱"/>
+         <input type="file" name="image"/>
+         <div align="center" class="upload_div">上传图片</div>
+         <select>
+             <option>A1教学楼</option>
+             <option>A2教学楼</option>
+             <option>A3教学楼</option>
+         </select>
+         <input type="submit" value="注册">
+
+     </form>
+
+    {% if error %}
+        <div align="center" class="error_red">账号已存在！</div>
+    {% endif %}
+
+    <script>
+        var file = document.getElementsByTagName('input')[5];
+        file.onchange = function () {
+            var file_name = file.value.split('\\');
+            document.getElementsByClassName('upload_div')[0].innerHTML = file_name[file_name.length - 1];
+        }
+    </script>
+</body>
+
+
+</html>

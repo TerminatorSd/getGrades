@@ -3,20 +3,20 @@
  */
 window.onload = function () {
 
-    var no = getCookie("no");
-    var psw = getCookie("psw");
-    var csrf = document.getElementsByTagName("input")[0].value;
-    if(no && psw) {
-        var info = {};
-        document.getElementsByClassName("input-info")[0].style.display = "none";
-        document.getElementsByClassName("wait")[0].style.display = "block";
-
-        info.no = no;
-        info.psw = psw;
-        info.csrfmiddlewaretoken=csrf;
-
-        getGradesInfo(info);
-    }
+    // var no = getCookie("no");
+    // var psw = getCookie("psw");
+    // var csrf = document.getElementsByTagName("input")[0].value;
+    // if(no && psw) {
+    //     var info = {};
+    //     document.getElementsByClassName("input-info")[0].style.display = "none";
+    //     document.getElementsByClassName("wait")[0].style.display = "block";
+    //
+    //     info.no = no;
+    //     info.psw = psw;
+    //     info.csrfmiddlewaretoken=csrf;
+    //
+    //     getGradesInfo(info);
+    // }
 };
 
 function getGrades() {
@@ -74,24 +74,29 @@ function getGradesInfo(info) {
         type: 'POST',
         data: info,
         success: function (data) {
-            setCookie("no", info.no, 7);
-            setCookie("psw", info.psw, 7);
-            //console.log(data);
-            var name = data[0].split('(')[0];
-            var str = '<div class="card"><p>姓名：' + name　+'</p><hr>';
-            console.log(name);
-            for(var item in data) {
-                if((parseInt(item) - 15) % 11 === 0) {
-                    str += '<p>' + data[item] + '：';
-                }
-                if((parseInt(item) - 17) % 11 === 0) {
-                    str += data[item] + '</p>'
-                }
-            }
-            str += '</div>';
+            console.log(data);
 
-            document.getElementsByClassName("wait")[0].style.display = "none";
-            document.getElementsByClassName("info")[0].innerHTML = str;
+            if(data !== "") {
+                setCookie("no", info.no, 7);
+                setCookie("psw", info.psw, 7);
+                var name = data[0].split('(')[0];
+                var str = '<div class="card"><p>姓名：' + name　+'</p><hr>';
+                console.log(name);
+                for(var item in data) {
+                    if((parseInt(item) - 15) % 11 === 0) {
+                        str += '<p>' + data[item] + '：';
+                    }
+                    if((parseInt(item) - 17) % 11 === 0) {
+                        str += data[item] + '</p>'
+                    }
+                }
+                str += '</div>';
+
+                document.getElementsByClassName("wait")[0].style.display = "none";
+                document.getElementsByClassName("info")[0].innerHTML = str;
+            }
+
+
         },
         fail: function () {
             console.log("fail!");

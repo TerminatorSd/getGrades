@@ -76,10 +76,18 @@ WSGI_APPLICATION = 'getGrades2.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
+MYSQL_DB = "Db_for_user"
+MYSQL_USER = "root"
+MYSQL_PASSWORD = "123456"
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': MYSQL_DB,
+        'USER': MYSQL_USER,
+        'PASSWORD': MYSQL_PASSWORD,
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
     }
 }
 
