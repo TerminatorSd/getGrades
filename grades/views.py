@@ -29,7 +29,7 @@ def newUser(request):
         if(result):
             return render(request, 'register.html', {'error':1})
         else:
-            User.objects.create(account = acc, passward = psw)
+            User.objects.create(account = acc, password = psw)
             return render(request, 'login.html')
 
 
