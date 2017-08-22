@@ -10,6 +10,9 @@
 
 </head>
 <body>
+    {% if error %}
+        <div align="center" class="error_red">账号已存在！请重新填写。</div>
+    {% endif %}
      <form action="/newUser/" method="post">
          {% csrf_token %}
          <input type="text" name="account" placeholder="账号" required/>
@@ -18,18 +21,16 @@
          <input type="email" name="email" placeholder="邮箱"/>
          <input type="file" name="image"/>
          <div align="center" class="upload_div">上传图片</div>
-         <select>
-             <option>A1教学楼</option>
-             <option>A2教学楼</option>
-             <option>A3教学楼</option>
-         </select>
+{#         <select>#}
+{#             <option>A1教学楼</option>#}
+{#             <option>A2教学楼</option>#}
+{#             <option>A3教学楼</option>#}
+{#         </select>#}
          <input type="submit" value="注册">
 
      </form>
 
-    {% if error %}
-        <div align="center" class="error_red">账号已存在！</div>
-    {% endif %}
+
 
     <script>
         var file = document.getElementsByTagName('input')[5];

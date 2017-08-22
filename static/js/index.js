@@ -3,20 +3,20 @@
  */
 window.onload = function () {
 
-    // var no = getCookie("no");
-    // var psw = getCookie("psw");
-    // var csrf = document.getElementsByTagName("input")[0].value;
-    // if(no && psw) {
-    //     var info = {};
-    //     document.getElementsByClassName("input-info")[0].style.display = "none";
-    //     document.getElementsByClassName("wait")[0].style.display = "block";
-    //
-    //     info.no = no;
-    //     info.psw = psw;
-    //     info.csrfmiddlewaretoken=csrf;
-    //
-    //     getGradesInfo(info);
-    // }
+    var no = getCookie("no");
+    var psw = getCookie("psw");
+    var csrf = document.getElementsByTagName("input")[0].value;
+    if(no && psw) {
+        var info = {};
+        document.getElementsByClassName("input-info")[0].style.display = "none";
+        document.getElementsByClassName("wait")[0].style.display = "block";
+
+        info.no = no;
+        info.psw = psw;
+        info.csrfmiddlewaretoken=csrf;
+
+        getGradesInfo(info);
+    }
 };
 
 function getGrades() {
@@ -95,8 +95,11 @@ function getGradesInfo(info) {
                 document.getElementsByClassName("wait")[0].style.display = "none";
                 document.getElementsByClassName("info")[0].innerHTML = str;
             }
-
-
+            else {
+                alert("账号密码错误！");
+                 document.getElementsByClassName("input-info")[0].style.display = "block";
+                 document.getElementsByClassName("wait")[0].style.display = "none";
+            }
         },
         fail: function () {
             console.log("fail!");

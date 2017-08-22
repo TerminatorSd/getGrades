@@ -10,16 +10,17 @@
 
 </head>
 <body>
+    {% if error %}
+        <div align="center" class="error_red">账号密码错误！请重新填写。</div>
+    {% endif %}
     <form action="/userLogin/" method="post">
         {% csrf_token %}
         <input type="text" name="account" placeholder="账号" required/>
         <input type="password" name="password" placeholder="密码" required/>
         <input type="submit" value="登录">
     </form>
-    {% if error %}
-        <div align="center" class="error_red">账号密码错误！</div>
-    {% endif %}
 
+{#    <div>{{ request.path }}</div>#}
 </body>
 
 
