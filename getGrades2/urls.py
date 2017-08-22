@@ -18,6 +18,7 @@ from django.contrib import admin
 from grades import views as grades_views
 
 urlpatterns = [
+    url(r'^/', grades_views.grades),
     url(r'^grades/', grades_views.grades),
     url(r'^getGrades/', grades_views.getGrades, name = "grades"),
     url(r'^login/', grades_views.login),
