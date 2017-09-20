@@ -91,7 +91,7 @@ def getGrades(request):
 def androidTest(request):
     print "enter androidTest()"
     if (request.method == "GET"):
-        return render(request, "login.html", {'error': 1})
+        return render(request, "success.html", {'error': 0})
     if (request.method == "POST"):
         postData = request.POST
         print postData
