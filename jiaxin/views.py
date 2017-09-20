@@ -88,13 +88,3 @@ def getGrades(request):
         return HttpResponse(json.dumps(ret))
 
 
-def androidTest(request):
-    print "enter androidTest()"
-    if (request.method == "GET"):
-        return render(request, "login.html", {'error': 1})
-    if (request.method == "POST"):
-        postData = request.POST
-        print postData
-        return HttpResponse({'ok'})
-
-

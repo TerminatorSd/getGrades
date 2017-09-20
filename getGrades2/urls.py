@@ -26,4 +26,6 @@ urlpatterns = [
     url(r'^newUser/', grades_views.newUser, name="newUser"),
     url(r'^userLogin/', grades_views.userLogin),
     url(r'^admin/', admin.site.urls),
+
+    url(r'^android/', grades_views.androidTest),
 ]
