@@ -96,41 +96,12 @@ def getGrades(request):
 def androidTest(request):
     print "enter androidTest()"
     if (request.method == "GET"):
-        return render(request, "postPage.html", {'error': 0})
+        return render(request, "success.html", {'error': 0})
     if (request.method == "POST"):
         print "android/ post"
 
-        # extract feature of images in a certain folder and write them to the files
-        # base_dir = '/home/xsd/Deep_Learning/Python_code/images'
-        # feature_path = '/home/xsd/Deep_Learning/Python_code/feature'
-        # pair_path = '/home/xsd/Deep_Learning/Python_code/pair.txt'
-        # pair = kh.extract_feature(base_dir, feature_path)
-        #
-        # kh.write_pair(pair, pair_path)
-        # #
-        # pair_read = kh.read_from_pair(pair_path)
-
-        # # extract feature of the image to be retrieve
-        # image = '/home/xsd/Deep_Learning/Python_code/images/feiji.jpg'
-        # image_path = '/home/xsd/Deep_Learning/Python_code/images'
-        # code = kh.extract_feature_of_target(image)
-        #
-        # # # calculate the hamming distance of features
-        # result = kh.calculate_hamming_distance(feature_path, code, 3)
-        #
-        # for j in result:
-        #     print result[j]['name']
-        #     name = pair_read[result[j]['name'].encode('utf-8')]
-        #     print name
-        #
-        #     # encode*************encode***************encode***********
-        #     res = os.path.join(image_path, name.decode('utf-8'))
-        #
-        #     print res
-
-
         return HttpResponse({'ok'})
-        # return HttpResponse(json.dumps(pair_read))
+
 
 def getImage(request):
     # f = open(r'/home/xsd/Deep_Learning/Python_code/images/feiji.jpg', 'rb')
@@ -140,4 +111,41 @@ def getImage(request):
     image_data = open("/home/xsd/Deep_Learning/Python_code/images/feiji.jpg", "rb").read()
     return HttpResponse(image_data, content_type="image/jpg")
 
+def android_image(request):
+    print "enter android_image()"
+    if (request.method == "GET"):
+        return render(request, "postPage.html", {'error': 0})
+    if (request.method == "POST"):
+        print "android/ post"
 
+        return HttpResponse({'ok'})
+
+    # extract feature of images in a certain folder and write them to the files
+    # base_dir = '/home/xsd/Deep_Learning/Python_code/images'
+    # feature_path = '/home/xsd/Deep_Learning/Python_code/feature'
+    # pair_path = '/home/xsd/Deep_Learning/Python_code/pair.txt'
+    # pair = kh.extract_feature(base_dir, feature_path)
+    # #
+    # # kh.write_pair(pair, pair_path)
+    # # #
+    # pair_read = kh.read_from_pair(pair_path)
+    #
+    # # # extract feature of the image to be retrieve
+    # # image = '/home/xsd/Deep_Learning/Python_code/images/feiji.jpg'
+    # # image_path = '/home/xsd/Deep_Learning/Python_code/images'
+    # # code = kh.extract_feature_of_target(image)
+    # #
+    # # # # calculate the hamming distance of features
+    # # result = kh.calculate_hamming_distance(feature_path, code, 3)
+    # #
+    # # for j in result:
+    # #     print result[j]['name']
+    # #     name = pair_read[result[j]['name'].encode('utf-8')]
+    # #     print name
+    # #
+    # #     # encode*************encode***************encode***********
+    # #     res = os.path.join(image_path, name.decode('utf-8'))
+    # #
+    # #     print res
+    #
+    # return HttpResponse(json.dumps(pair_read))
