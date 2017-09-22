@@ -2,56 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0366441-a874-402c-b984-fdb8d8e86dac" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/140621103432-19.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/1502162538547.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/150216258845.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/1502162597450.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/15021626401.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/1502162651265.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/Answers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/Google.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/aa.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/aaaaa.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/alert.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/apple2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/auth.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/banner.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/bendi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/btn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/chizhu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/cj001.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/fa.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/feiji.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/feijip.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/fengzheng.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/gitpull.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/gou1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/kmeans.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/loginTest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/lufei.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/mao1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/mao2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/test_result.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/路飞.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/选区_028.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/选区_031.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/选区_035.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/选区_036.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/选区_037.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grades/KevinHeader.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grades/kevinNet.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/postPage.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/postPage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/postPage.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jiaxin/admin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jiaxin/apps.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jiaxin/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jiaxin/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jiaxin/views.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jiaxin/__init__.py" afterPath="$PROJECT_DIR$/grades/test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/getGrades2/urls.py" afterPath="$PROJECT_DIR$/getGrades2/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grades/views.py" afterPath="$PROJECT_DIR$/grades/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,7 +33,7 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/getGrades2/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
+            <state relative-caret-position="2603">
               <caret line="137" column="16" lean-forward="false" selection-start-line="137" selection-start-column="16" selection-end-line="137" selection-end-column="16" />
               <folding />
             </state>
@@ -93,11 +43,9 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grades/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="112" column="21" lean-forward="false" selection-start-line="112" selection-start-column="21" selection-end-line="112" selection-end-column="21" />
-              <folding>
-                <element signature="e#24#63#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-684">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -168,7 +116,7 @@
         <entry file="file://$PROJECT_DIR$/getGrades2/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="532">
-              <caret line="30" column="44" lean-forward="false" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding>
                 <element signature="e#644#676#0" expanded="true" />
               </folding>
@@ -215,8 +163,8 @@
         <option value="$PROJECT_DIR$/grades/test.py" />
         <option value="$PROJECT_DIR$/grades/KevinHeader.py" />
         <option value="$PROJECT_DIR$/grades/kevinNet.py" />
-        <option value="$PROJECT_DIR$/grades/views.py" />
         <option value="$PROJECT_DIR$/static/js/postPage.js" />
+        <option value="$PROJECT_DIR$/grades/views.py" />
       </list>
     </option>
   </component>
@@ -588,7 +536,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-11" width="1922" height="1092" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1341853" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -598,7 +545,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32819724" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298647" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.433923" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.433923" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39958376" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -694,9 +641,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -768,9 +713,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
           <caret line="36" column="8" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -814,9 +757,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -940,16 +881,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/getGrades2/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="30" column="44" lean-forward="false" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
-          <folding>
-            <element signature="e#644#676#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grades/kevinNet.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -992,14 +923,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/getGrades2/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="137" column="16" lean-forward="false" selection-start-line="137" selection-start-column="16" selection-end-line="137" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/postPage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1008,13 +931,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/getGrades2/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2603">
+          <caret line="137" column="16" lean-forward="false" selection-start-line="137" selection-start-column="16" selection-end-line="137" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getGrades2/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="e#644#676#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grades/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="112" column="21" lean-forward="false" selection-start-line="112" selection-start-column="21" selection-end-line="112" selection-end-column="21" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-684">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

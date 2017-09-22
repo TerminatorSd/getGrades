@@ -9,7 +9,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from grades.models import User
 
-import KevinHeader as kh
+# import KevinHeader as kh
 
 # Create your views here.
 import requests
@@ -129,8 +129,8 @@ def androidTest(request):
         #     print res
 
 
-        # return HttpResponse(json.dumps(pair_read))
         return HttpResponse({'ok'})
+        # return HttpResponse(json.dumps(pair_read))
 
 def getImage(request):
     # f = open(r'/home/xsd/Deep_Learning/Python_code/images/feiji.jpg', 'rb')
