@@ -28,4 +28,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
 
     url(r'^android/', grades_views.androidTest),
+    url(r'^getImage/', grades_views.getImage),
+
 ]
