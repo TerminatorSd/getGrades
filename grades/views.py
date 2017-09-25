@@ -109,10 +109,19 @@ def getImage(request):
     # ls_f = base64.b64encode(f.read())
     # f.close()
 
-    image_data = open("/home/xsd/Deep_Learning/Python_code/images/feiji.jpg", "rb").read()
+    if(request.method == "GET"):
 
-    # print image_data
-    return HttpResponse(image_data, content_type="image/jpg")
+        data = request.GET
+
+        img = data.get('name')
+
+        path = "/home/xsd/Deep_Learning/Python_code/images/" + img
+
+        image_data = open(path, "rb").read()
+
+        # print image_data
+        return HttpResponse(image_data, content_type="image/jpg")
+
 
 
 def android_image(request):
@@ -141,30 +150,7 @@ def android_image(request):
                 fm.objects.create(imageName=item, textName=pair[item]['txt_name'], feature=pair[item]['code'])
 
         return HttpResponse(json.dumps(pair))
-    # #
-    # # kh.write_pair(pair, pair_path)
-    # # #
-    # pair_read = kh.read_from_pair(pair_path)
-    #
-    # # # extract feature of the image to be retrieve
-    # # image = '/home/xsd/Deep_Learning/Python_code/images/feiji.jpg'
-    # # image_path = '/home/xsd/Deep_Learning/Python_code/images'
-    # # code = kh.extract_feature_of_target(image)
-    # #
-    # # # # calculate the hamming distance of features
-    # # result = kh.calculate_hamming_distance(feature_path, code, 3)
-    # #
-    # # for j in result:
-    # #     print result[j]['name']
-    # #     name = pair_read[result[j]['name'].encode('utf-8')]
-    # #     print name
-    # #
-    # #     # encode*************encode***************encode***********
-    # #     res = os.path.join(image_path, name.decode('utf-8'))
-    # #
-    # #     print res
-    #
-    # return HttpResponse(json.dumps(pair_read))
+
 def squeezeNet(request):
     print "enter squeezeNet..."
     if (request.method == "GET"):
@@ -210,19 +196,21 @@ def queryAll(request):
 
 def forSimilarity(request):
     print "Enter forSimilarity..."
+    feature = sh.getRandomFeature()
+    feature = '1111111111111101110111111000000111111000111110110001001000001111001011000000000011111110110111100100000111110000110001000000000000000110101111101110001100100111001000000001111000111010111110001101101101010001100100000010000101010011100111001010010011100110000100111000111111111111111111111111110110110000000000000000000110100011001111011111111110011110111111111011100011111111111111111001011110110100000000000000101000110000000000010011001000010000000011100100000110000110110100100000010100001010000001101110100011111001000000010100101001010001010001001000100000110010000010010000000010011000010011101001001100010100001110110000000011001111000100000000000000110000101000000110110011001000100001001000100000000011100110010111011010001000000000100000111001110010110101010100111000100011110000000000110100001101111101001000000000010000000111010100111011111001000111010100000000011010000101000000000011010110110001101000111001000000000000000100000000011010011011000000100010000101011000000001001010011011'
+
     if(request.method == "POST"):
 
         print "enter forSim/post..."
         postData = request.POST
-        print postData.get('feature')
-        # pair = {}
-        # res = fm.objects.all().values()
-        #
-        # for item in res:
-        #     pair[item['imageName']] = sh.getHamming(request.feature, item['feature'])
-        #
-        # pair_sort = sorted(pair.iteritems(), key=lambda asd: asd[1], reverse=False)
-        #
-        # result = sh.printTopk(3, pair_sort)
+        pair = {}
+        res = fm.objects.all().values()
 
-        return HttpResponse({'res':'ok'})
+        for item in res:
+            pair[item['imageName']] = sh.getHamming(feature, item['feature'])
+
+        pair_sort = sorted(pair.iteritems(), key=lambda asd: asd[1], reverse=False)
+
+        result = sh.printTopk(3, pair_sort)
+
+        return HttpResponse(json.dumps(result))

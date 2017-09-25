@@ -2,6 +2,7 @@
 from __future__ import unicode_literals
 
 from django.test import TestCase
+import random
 
 # Create your tests here.
 # -*- coding: utf-8 -*-
@@ -17,5 +18,16 @@ def getHamming(a, b):
     else:
         return "Error: len(a)!=len(b)!"
 
-print getHamming('1010', '0101')
+def getRandomFeature():
+    feature = ""
+    for i in range(1, 1000):
+        ran = random.random()
+        if(ran > 0.5):
+            feature += '1'
+        else:
+            feature += '0'
 
+    return feature
+
+print getHamming('1010', '0101')
+print getRandomFeature()

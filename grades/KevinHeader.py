@@ -2,7 +2,7 @@
 #加载必要的库
 import numpy as np
 
-import sys,os
+import sys,os,random
 
 #设置当前目录
 caffe_root = '/home/xsd/Deep_Learning/caffe/'
@@ -20,6 +20,17 @@ transformer.set_transpose('data', (2,0,1))
 transformer.set_mean('data', np.load(mean_file).mean(1).mean(1))
 transformer.set_raw_scale('data', 255)
 transformer.set_channel_swap('data', (2,1,0))
+
+def getRandomFeature():
+    feature = ""
+    for i in range(1, 1000):
+        ran = random.random()
+        if(ran > 0.5):
+            feature += '1'
+        else:
+            feature += '0'
+
+    return feature
 
 def write_pair(pair, pair_path):
     print pair

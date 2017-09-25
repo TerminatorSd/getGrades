@@ -1,5 +1,7 @@
 #coding=utf-8
 #加载必要的库
+import random
+
 import numpy as np
 
 import sys,os
@@ -162,3 +164,16 @@ def getHamming(a, b):
 
     else:
         return "Error: len(a)!=len(b)!"
+
+
+
+def getRandomFeature():
+    feature = ""
+    for i in range(0, 1000):
+        ran = random.random()
+        if(ran > 0.5):
+            feature += '1'
+        else:
+            feature += '0'
+
+    return feature

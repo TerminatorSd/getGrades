@@ -16,7 +16,9 @@
     <input type="button" id="query" value="Query">
     <input type="button" id="forSim" value="forSim">
 
-    <img src="/getImage/" alt=""/>
+    <img src="" alt="0"/>
+    <img src="" alt="1"/>
+    <img src="" alt="2"/>
 
 <script>
     $().ready(function () {
@@ -104,6 +106,11 @@
             },
             success:function (data) {
                 console.log(data);
+
+                document.getElementsByTagName('img')[0].src = '/getImage/?name=' + data[0].name;
+                document.getElementsByTagName('img')[1].src = '/getImage/?name=' + data[1].name;
+                document.getElementsByTagName('img')[2].src = '/getImage/?name=' + data[2].name;
+{#                document.getElementsByTagName('img')[0].src = data;#}
             },
             error:function () {
                 console.log("error!");
