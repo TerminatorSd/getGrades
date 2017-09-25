@@ -10,8 +10,8 @@ sys.path.insert(0, caffe_root + 'python')
 import caffe
 os.chdir(caffe_root)
 
-net_file=caffe_root + 'models/bvlc_reference_caffenet/KevinNet_CIFAR10_deploy32.prototxt'
-caffe_model=caffe_root + 'models/bvlc_reference_caffenet/KevinNet_CIFAR10_32.caffemodel'
+net_file=caffe_root + 'models/SqueezeNet/squeezenet_v1.1.prototxt'
+caffe_model=caffe_root + 'models/SqueezeNet/squeezenet_v1.1.caffemodel'
 mean_file=caffe_root + 'python/caffe/imagenet/ilsvrc_2012_mean.npy'
 
 net = caffe.Net(net_file,caffe_model,caffe.TEST)
@@ -66,10 +66,15 @@ def extract_feature(base_dir, feature_path):
         net.blobs['data'].data[...] = transformer.preprocess('data', im)
         out = net.forward()
 
-        encode = net.blobs['fc8_kevin_encode'].data[0].flatten()
+        encode = net.blobs['pool10'].data[0].flatten()
         code = []
+        total = 0
+        for k in np.arange(encode.size):
+            total += encode[k]
+        avg = total / encode.size
+
         for j in np.arange(encode.size):
-            if (encode[j] >= 0.5):
+            if (encode[j] >= avg):
                 code.append('1')
             else:
                 code.append('0')
@@ -95,11 +100,16 @@ def extract_feature_of_target(image):
     net.blobs['data'].data[...] = transformer.preprocess('data', im)
     out = net.forward()
 
-    encode = net.blobs['fc8_kevin_encode'].data[0].flatten()
+    encode = net.blobs['pool10'].data[0].flatten()
     code = []
+    total = 0
+    for k in np.arange(encode.size):
+        total += encode[k]
+    avg = total / encode.size
+
     for j in np.arange(encode.size):
         # print encode[j]
-        if (encode[j] >= 0.5):
+        if (encode[j] >= avg):
             code.append('1')
         else:
             code.append('0')
@@ -142,3 +152,13 @@ def calculate_hamming_distance(feature_path, code, topk):
     result = printTopk(topk, sort)
     return result
 
+def getHamming(a, b):
+    dif = 0
+    if(len(a) == len(b)):
+        for i in range(len(a)):
+            if(a[i] != b[i]):
+                dif += 1
+        return dif
+
+    else:
+        return "Error: len(a)!=len(b)!"

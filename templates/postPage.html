@@ -11,10 +11,106 @@
 </head>
 <body>
     <input type="button" id="post" value="send" />
-    <img src="/getImage/" alt=""/>
-    <img src="" alt=""/>
-<script>
+    <input type="button" id="feature" value="Extract">
+    <input type="button" id="squeeze" value="SqueezeNet">
+    <input type="button" id="query" value="Query">
+    <input type="button" id="forSim" value="forSim">
 
+    <img src="/getImage/" alt=""/>
+
+<script>
+    $().ready(function () {
+
+
+    $("#post").click(function () {
+        $.ajax({
+            url:'http://39.108.163.91:5000/android/',
+            dataType:'JSON',
+            type:'POST',
+            data:{
+                name:'haha',
+                value:'123'
+            },
+            success:function (data) {
+                console.log(data);
+            },
+            error:function () {
+                console.log("error!");
+            }
+        })
+    });
+
+    $("#feature").click(function () {
+        $.ajax({
+            url:'/android_2/',
+            dataType:'JSON',
+            type:'POST',
+            data:{
+                name:'feature',
+                value:'123'
+            },
+            success:function (data) {
+                console.log(data);
+            },
+            error:function () {
+                console.log("error!");
+            }
+        })
+    });
+
+    $("#squeeze").click(function () {
+        $.ajax({
+            url:'/squeeze/',
+            dataType:'JSON',
+            type:'POST',
+            data:{
+                name:'feature',
+                value:'squeeze'
+            },
+            success:function (data) {
+                console.log(data);
+            },
+            error:function () {
+                console.log("error!");
+            }
+        })
+    });
+
+    $("#query").click(function () {
+        $.ajax({
+            url:'/queryAll/',
+            dataType:'JSON',
+            type:'POST',
+            data:{
+                name:'feature',
+                value:'query'
+            },
+            success:function (data) {
+                console.log(data);
+            },
+            error:function () {
+                console.log("error!");
+            }
+        })
+    });
+
+    $("#forSim").click(function () {
+        $.ajax({
+            url:'/forSim/',
+            dataType:'JSON',
+            type:'POST',
+            data:{
+                feature:'10101010011010101'
+            },
+            success:function (data) {
+                console.log(data);
+            },
+            error:function () {
+                console.log("error!");
+            }
+        })
+    });
+});
 </script>
 </body>
 </html>

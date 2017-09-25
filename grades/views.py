@@ -3,13 +3,15 @@ from __future__ import unicode_literals
 
 import json
 import os
-import base64
+import time
 
 from django.http import HttpResponse
 from django.shortcuts import render
 from grades.models import User
+from grades.models import featureMap as fm
 
-# import KevinHeader as kh
+import KevinHeader as kh
+import SqueezeHeader as sh
 
 # Create your views here.
 import requests
@@ -99,7 +101,6 @@ def androidTest(request):
         return render(request, "success.html", {'error': 0})
     if (request.method == "POST"):
         print "android/ post"
-
         return HttpResponse({'ok'})
 
 
@@ -109,7 +110,10 @@ def getImage(request):
     # f.close()
 
     image_data = open("/home/xsd/Deep_Learning/Python_code/images/feiji.jpg", "rb").read()
+
+    # print image_data
     return HttpResponse(image_data, content_type="image/jpg")
+
 
 def android_image(request):
     print "enter android_image()"
@@ -118,13 +122,25 @@ def android_image(request):
     if (request.method == "POST"):
         print "android/ post"
 
-        return HttpResponse({'ok'})
+        # extract feature of images in a certain folder and write them to the database
+        base_dir = '/home/xsd/Deep_Learning/Python_code/images'
+        feature_path = '/home/xsd/Deep_Learning/Python_code/feature'
 
-    # extract feature of images in a certain folder and write them to the files
-    # base_dir = '/home/xsd/Deep_Learning/Python_code/images'
-    # feature_path = '/home/xsd/Deep_Learning/Python_code/feature'
-    # pair_path = '/home/xsd/Deep_Learning/Python_code/pair.txt'
-    # pair = kh.extract_feature(base_dir, feature_path)
+        # pair contains imageName, textName and feature_code
+        pair = kh.extract_feature(base_dir, feature_path)
+
+        time1 = time.time()
+
+        for item in pair:
+            # print item,
+            # print item.encode('utf-8')
+            result = fm.objects.filter(imageName=item)
+            if(result):
+                result.feature = pair[item]['code']
+            else:
+                fm.objects.create(imageName=item, textName=pair[item]['txt_name'], feature=pair[item]['code'])
+
+        return HttpResponse(json.dumps(pair))
     # #
     # # kh.write_pair(pair, pair_path)
     # # #
@@ -149,3 +165,64 @@ def android_image(request):
     # #     print res
     #
     # return HttpResponse(json.dumps(pair_read))
+def squeezeNet(request):
+    print "enter squeezeNet..."
+    if (request.method == "GET"):
+        return render(request, "postPage.html", {'error': 0})
+    if (request.method == "POST"):
+        print "squeeze/post..."
+
+        # extract feature of images in a certain folder and write them to the database
+        base_dir = '/home/xsd/Deep_Learning/Python_code/images'
+        feature_path = '/home/xsd/Deep_Learning/Python_code/feature'
+
+        # pair contains imageName, textName and feature_code
+        pair = sh.extract_feature(base_dir, feature_path)
+
+        time1 = time.time()
+
+        for item in pair:
+            # print item,
+            # print item.encode('utf-8')
+            result = fm.objects.filter(imageName=item)
+            if (result):
+                result.update(feature = pair[item]['code'])
+                # result.values().feature = pair[item]['code']
+            else:
+                fm.objects.create(imageName=item, textName=pair[item]['txt_name'], feature=pair[item]['code'])
+
+        print time.time()-time1
+
+        return HttpResponse(json.dumps(pair))
+
+
+def queryAll(request):
+    if (request.method == "POST"):
+
+        pair = {}
+        res = fm.objects.all().values()
+
+        for item in res:
+            pair[item['imageName']] = item['feature']
+
+        print pair
+        return HttpResponse(json.dumps(pair))
+
+def forSimilarity(request):
+    print "Enter forSimilarity..."
+    if(request.method == "POST"):
+
+        print "enter forSim/post..."
+        postData = request.POST
+        print postData.get('feature')
+        # pair = {}
+        # res = fm.objects.all().values()
+        #
+        # for item in res:
+        #     pair[item['imageName']] = sh.getHamming(request.feature, item['feature'])
+        #
+        # pair_sort = sorted(pair.iteritems(), key=lambda asd: asd[1], reverse=False)
+        #
+        # result = sh.printTopk(3, pair_sort)
+
+        return HttpResponse({'res':'ok'})

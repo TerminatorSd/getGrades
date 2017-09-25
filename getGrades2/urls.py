@@ -30,6 +30,7 @@ urlpatterns = [
     url(r'^android/', grades_views.androidTest),
     url(r'^getImage/', grades_views.getImage),
     url(r'^android_2/', grades_views.android_image),
-
-
+    url(r'^squeeze/', grades_views.squeezeNet),
+    url(r'^queryAll/', grades_views.queryAll),
+    url(r'^forSim/', grades_views.forSimilarity)
 ]

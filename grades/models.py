@@ -14,3 +14,8 @@ class User(models.Model):
     def __unicode__(self):
         return self.account
 
+class featureMap(models.Model):
+    id = models.AutoField(primary_key=True)
+    imageName = models.CharField(max_length = 50)
+    textName = models.CharField(max_length = 50)
+    feature = models.CharField(max_length = 1024)
