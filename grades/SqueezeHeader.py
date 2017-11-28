@@ -7,7 +7,7 @@ import numpy as np
 import sys,os
 
 #设置当前目录
-caffe_root = '/home/xsd/Deep_Learning/caffe/'
+caffe_root = '/home/siudong/Deep_Learning/caffe/'
 sys.path.insert(0, caffe_root + 'python')
 import caffe
 os.chdir(caffe_root)
